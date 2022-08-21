@@ -1,7 +1,9 @@
 <!doctype html>
 
 <html lang="en">
-
+  <!-- https://github.com/google/material-design-lite/tree/mdl-1.x/templates/android-dot-com -->
+  <!-- https://getbootstrap.com/docs/5.2/helpers/stretched-link/#identifying-the-containing-block -->
+  <!-- https://iconmonstr.com/mail-thin-svg/ -->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,7 +49,7 @@
           <nav class="android-navigation mdl-navigation">
             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">About</a>
             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#project">Project</a>
-            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Contact</a>
+            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#Contact">Contact</a>
           </nav>
         </div>
       </div>
@@ -74,15 +76,6 @@
           from The Chinese University of Hong Kong
         </div>
 
-        <div class="logo-font android-create-character">
-          <a href="">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <path
-                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-            </svg>
-            Checkout my Github
-          </a>
-        </div>
         <a href="#project">
           <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
             <i class="material-icons">expand_more</i>
@@ -124,6 +117,16 @@
               </span>
             </li>
           </ul>
+
+          <div class="logo-font android-create-character">
+            <a href="https://github.com/umzr" rel="noreferrer noopener" target="_blank" style="text-decoration: none;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+              Checkout my Github
+            </a>
+          </div>
         </div>
 
         <a href="#education">
@@ -184,12 +187,42 @@
               </div>
             </div>
 
+
+
           </div>
 
 
 
         </div>
+        <a href="#Contact">
+          <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+            <i class="material-icons">expand_more</i>
+          </button>
+        </a>
+
       </div>
+
+      <!-- page 4 -->
+      <div class="android-screen-section mdl-typography--text-center">
+        <a name="Contact"></a>
+        <div class="mdl-typography--display-1-color-contrast">Contact</div>
+
+        <div class="android-more-section  mdl-typography--text-center">
+
+          <p>Feel free to contact me at the following:</p>
+
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Email: <a href="mailto:sslam@link.cuhk.edu.hk"
+                style="text-decoration: none;">sslam@link.cuhk.edu.hk</a></li>
+            <li class="list-group-item">Github: <a href="https://github.com/umzr" rel="noreferrer noopener"
+                target="_blank" style="text-decoration: none;">Umzr</a></li>
+            <li class="list-group-item">Linkedin: <a href="https://www.linkedin.com/in/steven-lamshishing/"
+                rel="noreferrer noopener" target="_blank" style="text-decoration: none;">LamShiShing</a></li>
+          </ul>
+
+        </div>
+      </div>
+
 
       <!-- footer -->
       <footer class="android-footer mdl-mega-footer">
