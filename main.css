@@ -8,10 +8,17 @@
 
 
 .box-center {
+    margin-top: 1rem;
     text-align: center;
 }
 
 
 .background-color {
     background-color: #f6f3f3;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
 }
