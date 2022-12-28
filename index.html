@@ -7,12 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="https://kit.fontawesome.com/c225d021fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
     <link rel="stylesheet" type="text/css" href="fullpage.css" />
     <script type="text/javascript" src="fullpage.js"></script>
 
-
+    <link rel="stylesheet" href="custom.css" />
     <link rel="stylesheet" href="main.css">
     <title>UMZR's Website</title>
 </head>
@@ -20,17 +22,17 @@
 <body class="background-color">
 
 
-    <nav id="navbar-example2" class="navbar sticky-top bg-body-secondary px-3 mb-3">
-        <a class="navbar-brand" href="#slide01">UMZR's Websit</a>
-        <div class=" d-md-none">
 
+    <nav id="navbar-example2" class="navbar sticky-top navbar-light  bg-light  px-3 mb-3 ">
+        <a class="navbar-brand" href="#slide01">UMZR's Websit</a>
+
+
+        <div class=" d-md-none">
             <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
                 aria-controls="offcanvasTop"> <i class="fa-solid fa-bars"></i></button>
-
         </div>
-
         <div class=" d-none d-md-block">
-            <ul class="nav nav-pills">
+            <ul class="nav nav-pills ">
                 <li class="nav-item">
                     <a class="nav-link" href="#slide01">About Me</a>
                 </li>
@@ -40,10 +42,33 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#slide03">Contact</a>
                 </li>
+
+                <li class="nav-item">
+                    <div class="d-flex">
+                        <input type="checkbox" class="btn-check" id="lightSwitch"  autocomplete="off">
+                        <label class="btn btn-light" for="lightSwitch">
+                            <div class="isLightTheme">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                                </svg>
+                            </div>
+                            <!-- <div class="isDarkTheme">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-moon-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+                                </svg>
+                            </div> -->
+                        </label>
+
+                    </div>
+                </li>
             </ul>
         </div>
-        <div class="collapse sticky-top" id="staticBackdrop">
-            <ul class="nav">
+        <!-- <div class="collapse sticky-top" id="staticBackdrop">
+            <ul class="nav navbar-light  bg-light ">
                 <li class="nav-item">
                     <a class="nav-link" href="#slide01">About Me</a>
                 </li>
@@ -53,12 +78,26 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#slide03">Contact</a>
                 </li>
+                <li class="nav-item">
+                    <div class="d-flex">
+                        <input type="checkbox" class="btn-check" id="lightSwitch" checked autocomplete="off">
+                        <label class="btn btn-light" for="lightSwitch">
+                            <div class="isLightTheme">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                                </svg>
+                            </div>
+                        </label>
+                    </div>
+                </li>
             </ul>
-        </div>
+        </div> -->
     </nav>
 
 
-    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas offcanvas-top text-dark bg-light" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
         <div class="offcanvas-header">
             <h5 id="offcanvasTopLabel">Menu</h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -73,6 +112,20 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#slide03">Contact</a>
+                </li>
+                <li class="nav-item">
+
+                    <input type="checkbox" class="btn-check" id="lightSwitch" checked autocomplete="off">
+                    <label class="btn btn-light" for="lightSwitch">
+                        <div class="isLightTheme">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                            </svg>
+                        </div>
+                    </label>
+
                 </li>
             </ul>
         </div>
@@ -110,31 +163,31 @@
                 <h4>
                     Project:</h4>
                 <p>This is my Project List</p>
-                <div class="card">
-                    <div class="card-body">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
+                <div class="card text-dark bg-light mb-3">
+                    <div class="card-body ">
+                        <ul class="list-group list-group-flush list-group-item-light">
+                            <li class="list-group-item list-group-item-light">
                                 <a href="https://github.com/umzr/Telegram-TradingView-Gmail-Bot-Google-Script-Version-"
                                     target="_blank">Telegram
                                     Tradingview Gmail Bot (Google Script Version)</a>
                             </li>
-                            <li class="list-group-item">
+                            <li class="list-group-item list-group-item-light">
                                 <a href="https://github.com/DoubleSpicy/wordle_war-" target="_blank">Wordle
                                     War</a>
                             </li>
-                            <li class="list-group-item">
+                            <li class="list-group-item list-group-item-light">
                                 <a href="https://github.com/umzr/Telegram-Tradingview-Gmail-Bot--Google-Script-Version-"
                                     target="_blank">Telegram Tradingview Gmail Bot (Python Version)</a>
                             </li>
-                            <li class="list-group-item">
+                            <li class="list-group-item list-group-item-light">
                                 <a href="https://github.com/umzr/FUTU-Indicators-Library" target="_blank">富途指標集合
                                     FUTU Indicators Library</a>
                             </li>
-                            <li class="list-group-item">
+                            <li class="list-group-item list-group-item-light">
                                 <a href="https://github.com/umzr/CUHK-REG-4-AUTO-Clicker" target="_blank">Telegram
                                     中大reg科Bot(python autoclicker)</a>
                             </li>
-                            <li class="list-group-item">
+                            <li class="list-group-item list-group-item-light">
                                 <a href="https://github.com/umzr/CUHK-CUSIS-AUTO-Reg"
                                     target="_blank">中大reg科Bot(Tampermonkey
                                     autoclicker)</a>
@@ -160,26 +213,25 @@
             <div class=" container">
                 <h4>
                     Contact:</h4>
-                <div class="card mb-3">
-                    <div class="row g-0">
+                <div class="card bg-light mb-3">
+                    <div class="row g-2">
                         <div class="col-md-8">
                             <div class="card-body">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Github: <a href="https://github.com/umzr"
-                                            rel="noreferrer noopener" target="_blank"
+                                <ul class="list-group list-group-flush ">
+                                    <li class="list-group-item list-group-item-light">Github: <a
+                                            href="https://github.com/umzr" rel="noreferrer noopener" target="_blank"
                                             style="text-decoration: none;">Umzr</a>
                                     </li>
-                                    <li class="list-group-item">Linkedin: <a
+                                    <li class="list-group-item list-group-item-light">Linkedin: <a
                                             href="https://www.linkedin.com/in/steven-lamshishing/"
                                             rel="noreferrer noopener" target="_blank"
                                             style="text-decoration: none;">LamShiShing</a>
                                     </li>
 
-                                    <li class="list-group-item">Old webpage: <a href=https://sites.google.com/view/umzr
-                                            rel="noreferrer noopener" target="_blank"
-                                            style="text-decoration: none;">click here</a>
+                                    <li class="list-group-item list-group-item-light">Old webpage: <a
+                                            href=https://sites.google.com/view/umzr rel="noreferrer noopener"
+                                            target="_blank" style="text-decoration: none;">click here</a>
                                     </li>
-
                                 </ul>
                             </div>
                         </div>
@@ -187,30 +239,39 @@
                             <img src="https://lh3.googleusercontent.com/LP689LKBLcUYtIkxABZ-q-OTxzbAuiigNdA-PEzX2VtC_oK0LIKM19W2i3-LVR4r5XmCrupezECZHUEzQ4d_CwA4SuUpSJ_ka4nZaKVyWd4mFDj-5aajf9SOfTr8GCd60yvk1VSf9GdyIaSnaxyy4mkMcpCrKQwgZcj3CH-un0T5f2UAoNUV8Q=w1280"
                                 class="img-fluid">
                         </div>
+
                     </div>
+
                 </div>
+
 
             </div>
 
         </div>
 
+    </div>
 
 
-        <script src="js/jquery.js"></script>
 
-        <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
 
-        <script src="js/fullpage.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-        <script src="js/scrolloverflow.js"></script>
+    <script src="js/fullpage.min.js"></script>
 
-        <script src="js/owl.carousel.min.js"></script>
+    <script src="js/scrolloverflow.js"></script>
 
-        <script src="js/jquery.inview.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
 
-        <script src="js/form.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
 
-        <script src="js/custom.js"></script>
+    <script src="js/form.js"></script>
+
+    <script src="js/custom.js"></script>
+
+    <script src="switch.js"></script>
+
+    <script src="https://kit.fontawesome.com/c225d021fe.js" crossorigin="anonymous"></script>
 
 </body>
 

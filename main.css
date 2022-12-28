@@ -17,8 +17,35 @@
 }
 
 
-.background-color {
-    background-color: #f6f3f3;
+#lightSwitch {
+    transform: scale(1.8);
+}
+
+.background-color.bg-light {
+    background-color: #f6f3f3 !important;
+    border-radius: 3px;
+    color: gainsboro;
+}
+
+.background-color.bg-dark {
+    background-color: #4d5053 !important;
+
+    color: dimgray;
+}
+
+.offcanvas.bg-light {
+    background-color: #f6f3f3 !important;
+}
+
+.offcanvas.bg-dark {
+    background-color: #4d5053 !important;
+
+    color: dimgray;
+}
+
+.card.bg-dark {
+    background-color: #707375 !important;
+    color: dimgray;
 }
 
 .card-img-top {
