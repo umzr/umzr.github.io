@@ -30,3 +30,11 @@
 .container {
     padding-top: 16px;
 }
+
+.offcanvasMenu {
+    text-align: center;
+}
+
+.offcanvasMenuNav {
+    display: contents;
+}
