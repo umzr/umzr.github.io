@@ -2,6 +2,10 @@
     height: 80vh;
 }
 
+.mobile {
+    height: 10vh;
+}
+
 .section {
     height: 100vh;
 }
