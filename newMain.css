@@ -1,0 +1,17 @@
+.section-about-me {
+    height: 100vh;
+}
+
+.section {
+    padding-top: 60px;
+    height: 100vh;
+}
+
+.content {
+    padding-top: 16px;
+}
+
+.box-center {
+    margin-top: 1rem;
+    text-align: center;
+}
