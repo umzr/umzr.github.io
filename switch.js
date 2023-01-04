@@ -65,7 +65,7 @@
       element.className = element.className.replace(/-dark/g, "-light");
     });
 
-    document.body.classList.add("bg-light");
+    // document.body.classList.add("bg-light");
 
     if (document.body.classList.contains("text-light")) {
       document.body.classList.replace("text-light", "text-dark");
