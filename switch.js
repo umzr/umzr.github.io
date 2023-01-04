@@ -18,6 +18,10 @@
       element.className = element.className.replace(/-light/g, "-dark");
     });
 
+    document.querySelectorAll(".text-dark").forEach((element) => {
+      element.className = element.className.replace(/-dark/g, "-light");
+    });
+
     document.querySelectorAll(".list-group-item-light").forEach((element) => {
       element.className = element.className.replace(/-light/g, "-dark");
     });
@@ -53,6 +57,10 @@
       element.className = element.className.replace(/-dark/g, "-light");
     });
 
+    document.querySelectorAll(".text-light").forEach((element) => {
+      element.className = element.className.replace(/-light/g, "-dark");
+    });
+
     document.querySelectorAll(".list-group-item-dark").forEach((element) => {
       element.className = element.className.replace(/-dark/g, "-light");
     });
@@ -65,6 +73,9 @@
       document.body.classList.add("text-dark");
     }
 
+    document.querySelectorAll(".bg-dark").forEach((element) => {
+      element.className = element.className.replace(/-dark/g, "-light");
+    });
     // Tables
     var tables = document.querySelectorAll("table");
     for (var i = 0; i < tables.length; i++) {
