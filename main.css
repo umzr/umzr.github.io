@@ -101,3 +101,7 @@
     align-items: center;
     width: fit-content;
 }
+
+.floatBox {
+    background-color: rgba(107, 87, 142, 0.453) !important;
+}

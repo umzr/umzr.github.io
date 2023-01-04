@@ -28,7 +28,7 @@
 
 
         <div class=" d-md-none">
-            <button class="btn btn-primary  bg-light" type="button" data-bs-toggle="offcanvas"
+            <button class="btn bg-light" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"> <i class="fa-solid fa-bars"></i></button>
         </div>
         <div class=" d-none d-md-block">
@@ -67,7 +67,7 @@
         aria-labelledby="offcanvasTopLabel">
         <div class="offcanvas-header  bg-light">
             <h5 id="offcanvasTopLabel">Menu</h5>
-            <button type="button" class="btn-close text-reset " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button " class="btn-close text-reset " data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body offcanvasMenu  bg-light">
             <ul class="nav offcanvasMenuNav">
@@ -100,11 +100,18 @@
     <div id="fullpage " class="fullpage-default">
         <div class="section background-color bg-light" data-section="slide01">
             <div class="box-center d-md-none " style="color: black">
-                <p class="h1 text-light ">👋🏻Hello, I am Steven Lam</p>
-                <p class="h6 text-light">
-                    I am a software engineer
-                    from The Chinese University of Hong Kong
-                </p>
+                <div style=" background-color: #212121; ">
+                    <div class="section-about-me position-relative main-image "
+                        style="background-position: center center; background-image: url(./image/AF1QipOk2jTwT4kWbinjVqDt5mTzraLouFIdU07tJv8X=w2930-h2197.jpg); background-size: cover; transform: translate3d(0px, 0px, 0px); opacity: 0.3;">
+                    </div>
+                </div>
+                <div class="position-absolute start-50 translate-middle  bg-light floatBox" style="color: rgba(249,249,249,1);">
+                    <p class="h1 text-light">👋🏻Hello, I am Steven Lam</p>
+                    <p class="h6 text-light">
+                        I am a software engineer
+                        from The Chinese University of Hong Kong
+                    </p>
+                </div>
             </div>
 
             <div class=" d-none d-md-block">
